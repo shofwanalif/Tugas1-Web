@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KonstruksiPro - Jasa Konstruksi Terpercaya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50" id="navbar">
+      <div class="container mx-auto px-6 py-6">
+        <div class="flex justify-between items-center">
+          <div class="text-2xl font-bold text-orange-600"><span class="text-gray-800">Konstruksi</span>Pro</div>
+          <div class="hidden md:flex space-x-8">
+            <a href="#home" class="nav-link text-gray-700 hover:text-orange-600 transition">Beranda</a>
+            <a href="#layanan" class="nav-link text-gray-700 hover:text-orange-600 transition">Layanan</a>
+            <a href="#proyek" class="nav-link text-gray-700 hover:text-orange-600 transition">Proyek</a>
+            <a href="#tentang" class="nav-link text-gray-700 hover:text-orange-600 transition">Tentang</a>
+            <a href="#kontak" class="nav-link text-gray-700 hover:text-orange-600 transition">Kontak</a>
+          </div>
+          <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4">
+          <a href="#home" class="block py-2 text-gray-700 hover:text-orange-600">Beranda</a>
+          <a href="#layanan" class="block py-2 text-gray-700 hover:text-orange-600">Layanan</a>
+          <a href="#proyek" class="block py-2 text-gray-700 hover:text-orange-600">Proyek</a>
+          <a href="#tentang" class="block py-2 text-gray-700 hover:text-orange-600">Tentang</a>
+          <a href="#kontak" class="block py-2 text-gray-700 hover:text-orange-600">Kontak</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 bg-gradient-to-r from-orange-500 to-orange-700 text-white">
+      <div class="container mx-auto px-6 py-20 h-screen">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-8 md:mb-0 fade-in">
+            <h1 class="text-5xl font-bold mb-4">Bangun Masa Depan Bersama Kami</h1>
+            <p class="text-xl mb-8">Solusi konstruksi terpercaya untuk rumah, gedung, dan infrastruktur impian Anda</p>
+            <button class="bg-white text-orange-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition" id="cta-btn">
+              Konsultasi Gratis
+            </button>
+          </div>
+          <div class="md:w-1/2">
+            <div class="bg-white p-2 rounded-lg shadow-2xl">
+              <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600" alt="Konstruksi" class="rounded-lg w-full" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layanan Section -->
+    <section id="layanan" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">Layanan Kami</h2>
+        <p class="text-center text-gray-600 mb-12">Berbagai solusi konstruksi untuk kebutuhan Anda</p>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="service-card bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="text-orange-600 mb-4">
+              <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3 text-center">Pembangunan Rumah</h3>
+            <p class="text-gray-600 text-center">Wujudkan rumah impian dengan desain modern dan berkualitas tinggi</p>
+          </div>
+
+          <div class="service-card bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="text-orange-600 mb-4">
+              <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3 text-center">Gedung Komersial</h3>
+            <p class="text-gray-600 text-center">Konstruksi gedung perkantoran dan pusat bisnis yang profesional</p>
+          </div>
+
+          <div class="service-card bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="text-orange-600 mb-4">
+              <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3 text-center">Renovasi</h3>
+            <p class="text-gray-600 text-center">Perbarui dan tingkatkan nilai properti Anda dengan layanan renovasi</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyek Section -->
+    <section id="proyek" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">Proyek Kami</h2>
+        <p class="text-center text-gray-600 mb-12">Portfolio pekerjaan yang telah kami selesaikan</p>
+
+        <div class="grid md:grid-cols-3 gap-6" id="project-grid">
+          <div class="project-item relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400" alt="Proyek 1" class="w-full h-64 object-cover" />
+            <div class="project-overlay absolute inset-0 bg-orange-600 bg-opacity-90 flex items-center justify-center opacity-0 transition-opacity">
+              <div class="text-white text-center p-4">
+                <h3 class="text-2xl font-bold mb-2">Villa Mewah Bali</h3>
+                <p>Pembangunan villa resort eksklusif</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-item relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400" alt="Proyek 2" class="w-full h-64 object-cover" />
+            <div class="project-overlay absolute inset-0 bg-orange-600 bg-opacity-90 flex items-center justify-center opacity-0 transition-opacity">
+              <div class="text-white text-center p-4">
+                <h3 class="text-2xl font-bold mb-2">Gedung Perkantoran</h3>
+                <p>Pembangunan gedung 15 lantai di Jakarta</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-item relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400" alt="Proyek 3" class="w-full h-64 object-cover" />
+            <div class="project-overlay absolute inset-0 bg-orange-600 bg-opacity-90 flex items-center justify-center opacity-0 transition-opacity">
+              <div class="text-white text-center p-4">
+                <h3 class="text-2xl font-bold mb-2">Perumahan Modern</h3>
+                <p>Kompleks perumahan 50 unit di Bandung</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang Section -->
+    <section id="tentang" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <div class="md:w-1/2">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600" alt="Team" class="rounded-lg shadow-xl" />
+          </div>
+          <div class="md:w-1/2">
+            <h2 class="text-4xl font-bold mb-6 text-gray-800">Tentang KonstruksiPro</h2>
+            <p class="text-gray-600 mb-4">
+              Dengan pengalaman lebih dari 15 tahun di industri konstruksi, kami telah menyelesaikan ratusan proyek di seluruh Indonesia.
+            </p>
+            <p class="text-gray-600 mb-6">
+              Tim profesional kami terdiri dari arsitek, insinyur sipil, dan tukang berpengalaman yang siap mewujudkan proyek impian Anda dengan
+              standar kualitas tertinggi.
+            </p>
+
+            <div class="grid grid-cols-2 gap-4">
+              <div class="stat-item bg-white p-4 rounded-lg shadow text-center">
+                <div class="text-3xl font-bold text-orange-600 counter" data-target="250">0</div>
+                <div class="text-gray-600">Proyek Selesai</div>
+              </div>
+              <div class="stat-item bg-white p-4 rounded-lg shadow text-center">
+                <div class="text-3xl font-bold text-orange-600 counter" data-target="15">0</div>
+                <div class="text-gray-600">Tahun Pengalaman</div>
+              </div>
+              <div class="stat-item bg-white p-4 rounded-lg shadow text-center">
+                <div class="text-3xl font-bold text-orange-600 counter" data-target="98">0</div>
+                <div class="text-gray-600">Kepuasan Klien (%)</div>
+              </div>
+              <div class="stat-item bg-white p-4 rounded-lg shadow text-center">
+                <div class="text-3xl font-bold text-orange-600 counter" data-target="50">0</div>
+                <div class="text-gray-600">Tim Profesional</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">Hubungi Kami</h2>
+        <p class="text-center text-gray-600 mb-12">Konsultasikan proyek konstruksi Anda dengan kami</p>
+
+        <div class="max-w-2xl mx-auto">
+          <form id="contact-form" class="space-y-4">
+            <div>
+              <input
+                type="text"
+                id="nama"
+                placeholder="Nama Lengkap"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-600"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-600"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="tel"
+                id="telepon"
+                placeholder="Nomor Telepon"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-600"
+                required
+              />
+            </div>
+            <div>
+              <textarea
+                id="pesan"
+                rows="5"
+                placeholder="Ceritakan tentang proyek Anda"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-600"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="w-full bg-orange-600 text-white py-3 rounded-lg font-semibold hover:bg-orange-700 transition">
+              Kirim Pesan
+            </button>
+          </form>
+          <div id="form-message" class="mt-4 text-center hidden"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-6 text-center">
+        <p>&copy; 2024 KonstruksiPro. All rights reserved.</p>
+        <div class="mt-4 flex justify-center space-x-6">
+          <a href="#" class="hover:text-orange-600 transition">Facebook</a>
+          <a href="#" class="hover:text-orange-600 transition">Instagram</a>
+          <a href="#" class="hover:text-orange-600 transition">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-orange-600 text-white p-3 rounded-full shadow-lg hover:bg-orange-700 transition hidden">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+      </svg>
+    </button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
