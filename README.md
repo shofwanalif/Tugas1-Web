@@ -4,3 +4,7 @@
    ```bash
    git clone https://github.com/shofwanalif/Tugas1-web.git
    cd Tugas1-web
+
+2. **Install dependency**
+   ```bash
+   npm install
